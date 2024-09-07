@@ -3,6 +3,7 @@
 class JerseyModel {
 
   dynamic name;
+  dynamic assetPath;
   int jersey_count = 0;
   
   int jersey_price = 0;
@@ -12,11 +13,13 @@ class JerseyModel {
 
   int total_price = 0;
 
+
   JerseyModel(
       {required this.jersey_count,
       required this.jersey_price,
       required this.init_price,
       required this.name,
-      required this.total_price
+      required this.total_price,
+      required this.assetPath
       });
 }

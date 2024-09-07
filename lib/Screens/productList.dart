@@ -15,19 +15,19 @@ class _ProductListPageState extends State<ProductListPage> {
         jersey_price: 0,
         init_price: 6,
         name: "Argentina",
-        total_price: 0),
+        total_price: 0, assetPath: 'assets/argentina.jpg'),
     JerseyModel(
         jersey_count: 0,
         jersey_price: 0,
         init_price: 5,
         name: "Bangladesh",
-        total_price: 0),
+        total_price: 0, assetPath:'assets/bd.jpg'),
     JerseyModel(
         jersey_count: 0,
         jersey_price: 0,
         init_price: 8,
         name: "Barcelona",
-        total_price: 0),
+        total_price: 0, assetPath: 'assets/fcb.jpg'),
   ];
 
   int total_price_jersey = 0;
@@ -78,7 +78,8 @@ class _ProductListPageState extends State<ProductListPage> {
                               decoration: BoxDecoration(
                                   color: Colors.amber,
                                   image: DecorationImage(
-                                      image: AssetImage('assets/bd.jpg'),
+                                      image: AssetImage("${JerseyList[index]
+                                                      .assetPath}"),
                                       fit: BoxFit.fill)),
                             ),
                             Container(
